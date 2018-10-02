@@ -3,29 +3,103 @@
   <head>
     <meta charset="utf-8">
     <title>Mayerce</title>
+  <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         </head>
 
   <body>
-    <div class="navbar bg-dark">
-      <button class="nav navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar bg-dark">
+     <span class="open-slide">
+    <a href="#" onclick="openSlideMenu()">
+     <svg width="30" height="30">
+       <path d="M0,5 30,5" stroke="#fff"
+       stroke-width="5"/>
+       <path d="M0,14 30,14" stroke="#fff"
+       stroke-width="5"/>
+       <path d="M0,23 30,23" stroke="#fff"
+       stroke-width="5"/>
+
+     </svg>
+    </a>
+    </span>
         <ul class="navbar-nav"></ul>
       <h1><strong><a href="#" style="color:purple;font-family: 'Lobster', cursive;">Mayerce.</a></strong></h1>
-
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      </nav>
+      <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </div>
 <div class="container">
     <div class="jumbotron" style="background-color:#DFCFBE;">
-<h1 id="h"><i class="fa fa-buysellads" aria-hidden="true"></i>  We serve better!</h1>
+<h1><i class="fa fa-buysellads" aria-hidden="true"></i>  We serve better!</h1>
 <hr>
 <p><h3>Welcome to the amazing shopping for the shopholics.</h3></p>
 <p><a class="btn btn-primary btn-lg" href="http://www.google.com" role="button" >Shop Now</a></p>
 </div>
+
+<h1><bolder>Some Best products</bolder></h1>
+<div class="row text-center" style="display:flex,!important; flex-wrap: wrap,!important;"  >
+    <div class="col-lg-4 col-sm-6">
+      <a href="products/description/watach.html">  <img src="products/photos/watach.jpg" class="img-thumbnail" alt="usa"><strong>Mayerce Silver Watch</strong></a>
+
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <a href="products/description/hat.html">   <img src="products/photos/hats.jpg" class="img-thumbnail" alt="germany"><strong>Mayerce Itaian hats</strong></a>
+
+      </div>
+        <div class="col-lg-4 col-sm-6">
+    <a href="products/description/brace.html">   <img src="products/photos/brace.jpg" class="img-thumbnail" alt="europe"><strong>Mayerce bracelet</strong></a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+        <a href="products/description/t-shirt.html">   <img src="products/photos/t-shirt.jpg" class="img-thumbnail" alt="uk"><strong>Mayerce silk t-shirt</strong></a>
+
+        </div>
+          <div class="col-lg-4 col-sm-6">
+      <a href="products/description/shoe.html">    <img src="products/photos/shoe.jpeg" class="img-thumbnail"  alt="italy"><strong>Mayerce leather shoes</strong></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+            <a href="products/description/jeans.html">   <img src="products/photos/jeans.jpeg" class="img-thumbnail" alt="malaysia"><strong>Mayerce light Jeans</strong></a>
+              </div>
+
+
+
+
+
+
 </div>
 
 
-<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
+<footer class="page-footer " >
+<div class="footer-copyright text-center "  style="color:white;">© 2018 Copyright:Mayank Maheshwari
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+function openSlideMenu() {
+  document.getElementById('side-menu').style.width='250px';
+    document.getElementById('main').style.marginLeft='250px';
+
+}
+
+
+function closeSlideMenu() {
+  document.getElementById('side-menu').style.width='0';
+  document.getElementById('main').style.marginLeft='0';
+
+}
+
+</script>
   </body>
 </html>
